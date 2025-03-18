@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="signup-box">
+            <p class="titulopoppins">Sign Up</p>
+            <form class="signup-form">
+                <!-- Primera columna: Name y Email -->
+                <div class="column">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="hello@nation.com" required>
+                    </div>
+                </div>
+
+                <!-- Segunda columna: Last Name y Password -->
+                <div class="column">
+                    <div class="input-group">
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" placeholder="Your last name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+
+                <!-- Tercera columna: Imagen del logo -->
+                <div class="column logo-container">
+                    <img src="image/logo nation 2.png" alt="Nation Logo">
+                </div>
+            </form>
+            <button type="submit" class="create-btn">Create</button>
+        </div>
+        <div class="logo">
+            <img src="image/logo nation blanco.png" alt="Nation Logo">
+        </div>
+    </div>
+</body>
+</html>
