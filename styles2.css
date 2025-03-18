@@ -22,13 +22,6 @@ body {
     align-items: center;
 }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
 .signin-box {
     display: flex;
     flex-direction: column;
@@ -98,7 +91,7 @@ body {
 /* Enlace de registro */
 .signup-link {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     margin-left: -75px;
 }
