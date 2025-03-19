@@ -1,0 +1,201 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ebebeb;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px 40px;
+    background: #d5d3d3;
+}
+
+.logo img {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.profile-box {
+    background: #b3b3b3;
+    padding: 20px 80px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute; /* Lo posicionamos de manera absoluta */
+    right: 0%; /* Lo llevamos completamente a la derecha */
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
+}
+
+.profile-box i {
+    font-size: 18px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    padding: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    margin-right: 80px;
+    margin-left: 30px;
+}
+
+.sidebar h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    padding-bottom: 8px;
+    transition: 0.3s;
+}
+
+.signout {
+    display: flex;
+    align-items: center; /* Alinea el icono y el texto verticalmente */
+    gap: 10px; /* Espacio entre el icono y el texto */
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 250px;
+    transition: 0.3s;
+}
+
+.profile-section i,
+.signout i {
+    font-size: 18px;
+}
+
+/* Profile Content */
+.profile-content {
+    flex: 1;
+    margin-left: 40px;
+    padding: 30px;
+}
+
+.profile-photo {
+    display: flex;
+    align-content: center; /* Alinea verticalmente la imagen con el texto */
+    margin-bottom: 30px;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.profile-photo img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    border-radius: 3px;
+}
+
+.profile-photo p {
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    color: #333; /* Color del texto */
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.row2 {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.info-group {
+    flex: 1;
+}
+
+.info-group label {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 3px;
+}
+
+.info-group p {
+    color: rgba( 0, 0, 0, 0.75);
+}
+
+.info-group input {
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+}
+
+/* Edit icon */
+.info-group i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Update button */
+.update-btn {
+    display: block;
+    width: 300px; /* Hace el botón más pequeño */
+    padding: 8px;
+    background: #d4d4d4;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px auto 0 auto; /* Lo centra horizontalmente */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.update-btn:hover {
+    background: white;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-container i {
+    padding: 10px;
+    cursor: pointer;
+    color: #666;
+}
