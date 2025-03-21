@@ -86,14 +86,14 @@ main {
 }
 
 .profile-section a {
-    text-decoration: none !important; /* Quita el subrayado */
-    color: black !important; /* Cambia el color del texto a negro */
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .signout {
     display: flex;
-    align-items: center; /* Alinea el icono y el texto verticalmente */
-    gap: 10px; /* Espacio entre el icono y el texto */
+    align-items: center;
+    gap: 10px;
     font-weight: bold;
     cursor: pointer;
     padding-top: 250px;
@@ -114,20 +114,20 @@ main {
 
 .profile-photo {
     display: flex;
-    align-content: center; /* Alinea verticalmente la imagen con el texto */
+    align-content: center;
     margin-bottom: 30px;
-    gap: 10px; /* Espacio entre la imagen y el texto */
+    gap: 10px;
 }
 
 .profile-photo img {
-    width: 100px; /* Ajusta el tamaño de la imagen */
+    width: 100px;
     border-radius: 3px;
 }
 
 .profile-photo p {
-    font-size: 16px; /* Ajusta el tamaño del texto */
+    font-size: 16px;
     font-weight: bold;
-    color: #333; /* Color del texto */
+    color: #333; 
 }
 
 .row {
@@ -172,7 +172,7 @@ main {
 /* Update button */
 .update-btn {
     display: block;
-    width: 300px; /* Hace el botón más pequeño */
+    width: 300px;
     padding: 8px;
     background: #d4d4d4;
     border: none;
@@ -180,7 +180,7 @@ main {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    margin: 10px auto 0 auto; /* Lo centra horizontalmente */
+    margin: 10px auto 0 auto;
     text-align: center;
     margin-top: 30px;
 }
