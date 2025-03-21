@@ -47,6 +47,11 @@ nav ul li a {
     gap: 8px; /* Espacio entre el icono y el texto */
 }
 
+.profile-box a {
+    text-decoration: none !important; /* Quita el subrayado */
+    color: black !important; /* Cambia el color del texto a negro */
+}
+
 .profile-box i {
     font-size: 18px;
 }
@@ -78,6 +83,11 @@ main {
     cursor: pointer;
     padding-bottom: 8px;
     transition: 0.3s;
+}
+
+.profile-section a {
+    text-decoration: none !important; /* Quita el subrayado */
+    color: black !important; /* Cambia el color del texto a negro */
 }
 
 .signout {

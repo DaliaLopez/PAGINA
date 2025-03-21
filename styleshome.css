@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ebebeb;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px 40px;
+    background: #d5d3d3;
+}
+
+.logo img {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.profile-box {
+    background: #b3b3b3;
+    padding: 20px 80px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute; /* Lo posicionamos de manera absoluta */
+    right: 0%; /* Lo llevamos completamente a la derecha */
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
+}
+
+.profile-box a {
+    text-decoration: none !important; /* Quita el subrayado */
+    color: black !important; /* Cambia el color del texto a negro */
+}
+
+.profile-box i {
+    font-size: 18px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajusta según el tamaño deseado */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.hero-text h1:first-child {
+    font-style: italic; /* FIND en cursiva */
+}
+
+.hero-text h1:last-child {
+    font-weight: 900; /* YOUR VIBE más grueso */
+}
