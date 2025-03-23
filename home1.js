@@ -1,35 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Cargar favoritos desde localStorage
+    // Código existente para favoritos
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     
-    // Obtener todos los botones de favoritos
     const favoriteBtns = document.querySelectorAll('.favorite-btn');
     
-    // Inicializar el estado de los botones basado en localStorage
     favoriteBtns.forEach(btn => {
         const productElement = btn.closest('.product');
         const productId = createProductId(productElement);
         
-        // Si el producto está en favoritos, mostrar corazón lleno
         if (favorites.some(fav => fav.id === productId)) {
             const icon = btn.querySelector('i');
             icon.classList.remove('fa-regular');
             icon.classList.add('fa-solid');
         }
         
-        // Agregar evento click a cada botón
         btn.addEventListener('click', function() {
             toggleFavorite(this);
         });
     });
     
-    // Función para alternar estado de favorito
     function toggleFavorite(button) {
         const icon = button.querySelector('i');
         const productElement = button.closest('.product');
         const productId = createProductId(productElement);
         
-        // Crear objeto con datos del producto
         const product = {
             id: productId,
             name: productElement.querySelector('h3').textContent,
@@ -38,29 +32,71 @@ document.addEventListener('DOMContentLoaded', function() {
             category: productElement.dataset.name
         };
         
-        // Verificar si ya está en favoritos
         const existingIndex = favorites.findIndex(fav => fav.id === productId);
         
         if (existingIndex === -1) {
-            // Agregar a favoritos
             favorites.push(product);
             icon.classList.remove('fa-regular');
             icon.classList.add('fa-solid');
         } else {
-            // Quitar de favoritos
             favorites.splice(existingIndex, 1);
             icon.classList.remove('fa-solid');
             icon.classList.add('fa-regular');
         }
         
-        // Guardar en localStorage
         localStorage.setItem('favorites', JSON.stringify(favorites));
     }
     
-    // Función para crear un ID único para cada producto
     function createProductId(productElement) {
         const name = productElement.querySelector('h3').textContent;
         const img = productElement.querySelector('img').src;
         return name.replace(/\s+/g, '-').toLowerCase() + '-' + img.split('/').pop();
     }
+    
+    // NUEVA FUNCIONALIDAD DE BÚSQUEDA/FILTRADO
+    
+    // Obtener elementos del DOM
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.querySelector('.search-box button');
+    const products = document.querySelectorAll('.product');
+    
+    // Función de búsqueda/filtrado
+    function filterProducts() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        
+        // Si no hay término de búsqueda, mostrar todos los productos
+        if (searchTerm === '') {
+            products.forEach(product => {
+                product.style.display = 'block';
+            });
+            return;
+        }
+        
+        // Filtrar productos basado en el término de búsqueda
+        products.forEach(product => {
+            const productName = product.querySelector('h3').textContent.toLowerCase();
+            const productCategory = product.dataset.name.toLowerCase();
+            
+            // Verificar si el término de búsqueda está en el nombre o categoría
+            if (productName.includes(searchTerm) || productCategory.includes(searchTerm)) {
+                product.style.display = 'block'; // Mostrar producto
+            } else {
+                product.style.display = 'none'; // Ocultar producto
+            }
+        });
+    }
+    
+    // Evento para el botón de búsqueda
+    searchButton.addEventListener('click', filterProducts);
+    
+    // Evento para buscar mientras se escribe (opcional)
+    searchInput.addEventListener('keyup', function(event) {
+        // Filtrar productos al escribir
+        filterProducts();
+        
+        // También filtrar si se presiona Enter
+        if (event.key === 'Enter') {
+            filterProducts();
+        }
+    });
 });

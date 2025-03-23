@@ -39,7 +39,7 @@ body {
     font-size: 18px;
 }
 
-/* Estilos del formulario */
+/* ESTILO DEL FORMULARIO */
 .form-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,14 +47,14 @@ body {
     width: 100%;
 }
 
-/* Columnas del formulario */
+/* COLUMNAS DEL FORMULARIO */
 .column {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Inputs */
+/* INPUTS */
 .input-group label {
     display: block;
     font-size: 14px;
@@ -76,7 +76,7 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Botón */
+/* BOTÓN */
 
 .button-container {
     margin: 25px;
@@ -101,7 +101,12 @@ body {
     color: black;
 }
 
-/* Imagen en la tercera columna */
+.create-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+/* TERCERA COLUMNA */
 .logo-container {
     display: flex;
     align-items: center;

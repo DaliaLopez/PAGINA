@@ -39,7 +39,7 @@ body {
     font-size: 18px;
 }
 
-/* Estilos del formulario */
+/* ESTILO DEL FORMULARIO */
 .signin-form {
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ body {
     width: 100%;
 }
 
-/* Inputs */
+/* INPUTS DEL FORM */
 .input-group label {
     display: block;
     font-size: 14px;
@@ -70,7 +70,7 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Botón */
+/* BOTÓN */
 .signin-btn {
     width: 85%;
     padding: 8px;
@@ -88,7 +88,12 @@ body {
     color: black;
 }
 
-/* Enlace de registro */
+.signin-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ENLACE A SIGN UP */
 .signup-link {
     margin-top: 15px;
     font-size: 16px;
@@ -106,7 +111,7 @@ body {
     text-decoration: underline;
 }
 
-/* Logo */
+/* IMAGEN LOGO */
 .logo {
     position: absolute;
     top: 40px;

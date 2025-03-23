@@ -12,7 +12,7 @@ nav ul{
     margin-bottom: -80px;
 }
 
-/* Estilos para cuando no hay favoritos */
+/* CUANDO NO HAY FAVORITOS */
 .no-favorites-message {
     display: flex;
     flex-direction: column;
@@ -46,13 +46,13 @@ nav ul{
     font-size: 25px;
 }
 
-/* Estilos para la cuadrícula de productos favoritos */
+/* ESTILOS DE PRODUCTOS */
 .favorites-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-/* Botón para eliminar de favoritos */
+/* BOTÓN PARA QUITAR DE FAVORITOS */
 .remove-favorite-btn {
     background: none;
     border-style: none;
@@ -62,11 +62,13 @@ nav ul{
     padding: 0;
 }
 
-/* Estilo para el menú activo */
+/* ESTILOS PARA EL MENÚ CON PRODUCTOS */
 nav ul li a.active {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* AQUÍ EMPIEZA CONTACT US */
 
 .contact-us {
     text-align: center;
@@ -172,7 +174,7 @@ nav ul li a.active {
 }
 
 .social-link:hover {
-    color: #8b8b8b; /* Color al hacer hover */
+    color: #8b8b8b;
 }
 
 .social-handle {
