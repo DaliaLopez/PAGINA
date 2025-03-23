@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            max-width: 250px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .rating {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center;">Lista de Productos</h1>
+    
+    <div class="container">
+        <!-- Producto 1 -->
+        <div class="product">
+            <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket">
+            <h3>Lock and Love Women's Jacket</h3>
+            <p>100% POLYURETHANE, Faux leather material for style and comfort.</p>
+            <p class="price">$29.95</p>
+            <p class="rating">⭐ 2.9 (340 reviews)</p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product">
+            <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="MBJ Women's Solid Short Sleeve Boat Neck V">
+            <h3>MBJ Women's Boat Neck V</h3>
+            <p>95% RAYON 5% SPANDEX, Lightweight fabric with great stretch.</p>
+            <p class="price">$9.85</p>
+            <p class="rating">⭐ 4.7 (130 reviews)</p>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product">
+            <img src="https://i.imgur.com/1twoaDy.jpeg" alt="Classic Red Pullover Hoodie">
+            <h3>Classic Red Pullover Hoodie</h3>
+            <p>Soft cotton blend with a kangaroo pocket and ribbed cuffs.</p>
+            <p class="price">$10</p>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product">
+            <img src="https://i.imgur.com/R2PN9Wq.jpeg" alt="Classic Grey Hooded Sweatshirt">
+            <h3>Classic Grey Hooded Sweatshirt</h3>
+            <p>Soft cotton blend, front pocket, adjustable hood.</p>
+            <p class="price">$90</p>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product">
+            <img src="https://i.imgur.com/cSytoSD.jpeg" alt="Classic Black Hooded Sweatshirt">
+            <h3>Classic Black Hooded Sweatshirt</h3>
+            <p>High-quality soft fabric, kangaroo pocket, and drawstring hood.</p>
+            <p class="price">$79</p>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product">
+            <img src="https://i.imgur.com/ZKGofuB.jpeg" alt="Classic Comfort Fit Joggers">
+            <h3>Classic Comfort Fit Joggers</h3>
+            <p>Elastic waistband, side pockets, and ribbed ankle cuffs.</p>
+            <p class="price">$25</p>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="product">
+            <img src="https://i.imgur.com/mp3rUty.jpeg" alt="Classic Comfort Drawstring Joggers">
+            <h3>Classic Comfort Drawstring Joggers</h3>
+            <p>Stretchable fabric, side pockets, gold-tipped drawstring.</p>
+            <p class="price">$79</p>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="product">
+            <img src="https://i.imgur.com/9LFjwpI.jpeg" alt="Classic Red Jogger Sweatpants">
+            <h3>Classic Red Jogger Sweatpants</h3>
+            <p>Snug waistband, adjustable drawstring, and practical side pockets.</p>
+            <p class="price">$98</p>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="product">
+            <img src="https://i.imgur.com/R3iobJA.jpeg" alt="Classic Navy Blue Baseball Cap">
+            <h3>Classic Navy Blue Baseball Cap</h3>
+            <p>Adjustable strap, structured design, durable fabric.</p>
+            <p class="price">$61</p>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="product">
+            <img src="https://i.imgur.com/wXuQ7bm.jpeg" alt="Classic Blue Baseball Cap">
+            <h3>Classic Blue Baseball Cap</h3>
+            <p>Six-panel design, pre-curved visor, adjustable fit.</p>
+            <p class="price">$86</p>
+        </div>
+
+        <!-- Producto 11 -->
+        <div class="product">
+            <img src="https://i.imgur.com/Y54Bt8J.jpeg" alt="Classic White Tee">
+            <h3>Classic White Tee</h3>
+            <p>Premium soft cotton, unisex fit, machine washable.</p>
+            <p class="price">$73</p>
+        </div>
+
+        <!-- Producto 12 -->
+        <div class="product">
+            <img src="https://i.imgur.com/9DqEOV5.jpeg" alt="Classic Black T-Shirt">
+            <h3>Classic Black T-Shirt</h3>
+            <p>Soft cotton, breathable, durable, perfect for layering.</p>
+            <p class="price">$35</p>
+        </div>
+    </div>
+
+</body>
+</html>

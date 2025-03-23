@@ -1,0 +1,181 @@
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.favorites-section h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    padding: 50px 80px;
+    margin-bottom: -80px;
+}
+
+/* Estilos para cuando no hay favoritos */
+.no-favorites-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    margin: 50px 0;
+}
+
+.no-favorites-message i {
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.no-favorites-message p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.browse-button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: black;
+    font-size: 25px;
+}
+
+/* Estilos para la cuadrícula de productos favoritos */
+.favorites-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Botón para eliminar de favoritos */
+.remove-favorite-btn {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+}
+
+/* Estilo para el menú activo */
+nav ul li a.active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us {
+    text-align: center;
+    padding: 0;
+    background: url("image/backgroundfav.jpg") no-repeat center center/cover;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title {
+    font-family: "MiFuente", sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: left;
+    padding: 0px 120px;
+    color: white;
+    margin-top: 30px;
+}
+.contact-title2 {
+    font-family: "MiFuente2", sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: left;
+    padding: 0px 120px;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-text {
+    max-width: 520px;
+    text-align: left;
+    padding-left: 120px;
+}
+.contact-infotitle {
+    text-align: left;
+    max-width: 300px;
+    padding-right: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0%;
+}
+
+.contact-info {
+    margin-top: -50px;
+    text-align: left;
+    max-width: 800px;
+    padding-right: 350px;
+}
+
+.contact-info p{
+    margin-bottom: 20px;
+}
+
+/*AQUI EMPIEZA EL FOOTER*/
+
+.footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/*AQUI EMPIEZA LOS ICONOS*/
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #8b8b8b; /* Color al hacer hover */
+}
+
+.social-handle {
+    color: white;
+    font-size: 18px;
+}
