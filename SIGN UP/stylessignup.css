@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('image/background22.jpg') center/cover;
+    background: url('../image/background.jpg') no-repeat center center/cover;
 }
 
 .background {
@@ -22,13 +22,13 @@ body {
     align-items: center;
 }
 
-.signin-box {
+.signup-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: hsla(0, 0%, 0%, 0.7);
     padding: 40px;
-    width: 40%;
+    width: 60%;
     color: #d5d3d3;
 }
 
@@ -40,14 +40,21 @@ body {
 }
 
 /* ESTILO DEL FORMULARIO */
-.signin-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.form-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
     width: 100%;
 }
 
-/* INPUTS DEL FORM */
+/* COLUMNAS DEL FORMULARIO */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* INPUTS */
 .input-group label {
     display: block;
     font-size: 14px;
@@ -56,14 +63,13 @@ body {
 }
 
 .input-group input {
-    width: 85%;
+    width: 100%;
     padding: 8px;
     margin-top: 4px;
     background: hsla(0, 0%, 0%, 0.75);
     border: none;
     color: white;
-    padding-left: 15px;
-    font-size: 14px;
+    padding-left: 20px;
 }
 
 .input-group input::placeholder {
@@ -71,8 +77,15 @@ body {
 }
 
 /* BOTÓN */
-.signin-btn {
-    width: 85%;
+
+.button-container {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.create-btn {
+    width: 60%;
     padding: 8px;
     background: #d5d3d3;
     border: none;
@@ -80,38 +93,31 @@ body {
     color: rgb(0, 0, 0);
     font-weight: bold;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 15PX;
 }
 
-.signin-btn:hover {
+.create-btn:hover {
     background: #ffffff;
     color: black;
 }
 
-.signin-btn a {
+.create-btn a {
     text-decoration: none;
     color: black;
 }
 
-/* ENLACE A SIGN UP */
-.signup-link {
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: -75px;
+/* TERCERA COLUMNA */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.signup-link a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+.logo-container img {
+    max-width: 150px;
+    border-radius: 3px;
 }
 
-.signup-link a:hover {
-    text-decoration: underline;
-}
-
-/* IMAGEN LOGO */
 .logo {
     position: absolute;
     top: 40px;

@@ -1,14 +1,14 @@
 /* FUENTES ENLAZADAS */
 @font-face {
     font-family: 'MiFuente';
-    src: url("Font/MiFuente.ttf") format('truetype'); 
+    src: url("../Font/MiFuente.ttf") format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MiFuente2';
-    src: url("Font/MiFuente2.ttf") format('truetype'); 
+    src: url("../Font/MiFuente2.ttf") format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -250,7 +250,7 @@ nav ul li a {
 .contact-us {
     text-align: center;
     padding: 0;
-    background: url("image/backgroundcontactus.jpg") no-repeat center center/cover;
+    background: url("../image/backgroundcontactus.jpg") no-repeat center center/cover;
     color: #fff;
     width: 100%;
     min-height: 100vh;

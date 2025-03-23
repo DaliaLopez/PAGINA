@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('image/background.jpg') no-repeat center center/cover;
+    background: url('../image/background22.jpg') center/cover;
 }
 
 .background {
@@ -22,13 +22,13 @@ body {
     align-items: center;
 }
 
-.signup-box {
+.signin-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: hsla(0, 0%, 0%, 0.7);
     padding: 40px;
-    width: 60%;
+    width: 40%;
     color: #d5d3d3;
 }
 
@@ -40,21 +40,14 @@ body {
 }
 
 /* ESTILO DEL FORMULARIO */
-.form-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    width: 100%;
-}
-
-/* COLUMNAS DEL FORMULARIO */
-.column {
+.signin-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
-/* INPUTS */
+/* INPUTS DEL FORM */
 .input-group label {
     display: block;
     font-size: 14px;
@@ -63,13 +56,14 @@ body {
 }
 
 .input-group input {
-    width: 100%;
+    width: 85%;
     padding: 8px;
     margin-top: 4px;
     background: hsla(0, 0%, 0%, 0.75);
     border: none;
     color: white;
-    padding-left: 20px;
+    padding-left: 15px;
+    font-size: 14px;
 }
 
 .input-group input::placeholder {
@@ -77,15 +71,8 @@ body {
 }
 
 /* BOTÓN */
-
-.button-container {
-    margin: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.create-btn {
-    width: 60%;
+.signin-btn {
+    width: 85%;
     padding: 8px;
     background: #d5d3d3;
     border: none;
@@ -93,31 +80,38 @@ body {
     color: rgb(0, 0, 0);
     font-weight: bold;
     cursor: pointer;
-    font-size: 15PX;
+    font-size: 15px;
 }
 
-.create-btn:hover {
+.signin-btn:hover {
     background: #ffffff;
     color: black;
 }
 
-.create-btn a {
+.signin-btn a {
     text-decoration: none;
     color: black;
 }
 
-/* TERCERA COLUMNA */
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ENLACE A SIGN UP */
+.signup-link {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -75px;
 }
 
-.logo-container img {
-    max-width: 150px;
-    border-radius: 3px;
+.signup-link a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* IMAGEN LOGO */
 .logo {
     position: absolute;
     top: 40px;

@@ -73,7 +73,7 @@ nav ul li a.active {
 .contact-us {
     text-align: center;
     padding: 0;
-    background: url("image/backgroundfav.jpg") no-repeat center center/cover;
+    background: url("../image/backgroundfav.jpg") no-repeat center center/cover;
     color: #fff;
     width: 100%;
     min-height: 100vh;
