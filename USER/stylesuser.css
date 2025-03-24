@@ -110,6 +110,11 @@ main {
     font-size: 18px;
 }
 
+.signout a {
+    text-decoration: none;
+    color: black;
+}
+
 /* CONTENIDO DEL LADO DERECHO DE LA PÁGINA */
 .profile-content {
     flex: 1;
